@@ -6,7 +6,7 @@ public class ChamberOfEchoes
     // Document what this code is doing
     // This code is predicting the next number in the sequence by finding the difference 
     // between the first two numbers and adding that difference to the last number in the sequence.
-    static int PredictNext(List<int> echoes)
+    public static int PredictNext(List<int> echoes)
     {
         int difference = echoes[1] - echoes[0];
         int next = echoes[echoes.Count - 1] + difference;

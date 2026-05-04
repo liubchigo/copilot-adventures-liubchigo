@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "engines": {
+    "node": ">=17.5.0"
+  },
+  "scripts": {
+    "tempora": "node The-Clockwork-Town-of-Tempora.js",
+    "algora": "node The-Magical-Forest-of-Algora.js",
+    "eldoria": "node The-Scrolls-of-Eldoria.js",
+    "lumoria": "node The-Celestial-Alignment-of-Lumoria.js",
+    "stonevale": "node The-Legendary-Duel-of-Stonevale.js",
+    "echoes": "node The-Chamber-of-Echoes.js"
+  }
+}

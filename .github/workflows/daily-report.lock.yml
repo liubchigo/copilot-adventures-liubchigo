@@ -112,7 +112,7 @@ jobs:
             await main(core, context);
       - name: Validate Copilot authentication token
         id: validate-secret
-        run: bash "${RUNNER_TEMP}/gh-aw/actions/validate_multi_secret.sh" COPILOT_GITHUB_TOKEN 'GitHub Copilot CLI (uses GH_AW_GITHUB_TOKEN with fallback to GITHUB_TOKEN or COPILOT_GITHUB_TOKEN)' https://github.github.com/gh-aw/reference/engines/#github-copilot-default
+        run: bash "${RUNNER_TEMP}/gh-aw/actions/validate_multi_secret.sh" COPILOT_GITHUB_TOKEN 'GitHub Copilot CLI' https://github.github.com/gh-aw/reference/engines/#github-copilot-default
         env:
           COPILOT_GITHUB_TOKEN: ${{ secrets.GH_AW_GITHUB_TOKEN || secrets.GITHUB_TOKEN || secrets.COPILOT_GITHUB_TOKEN }}
       - name: Checkout .github and .agents folders
